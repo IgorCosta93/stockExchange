@@ -1,0 +1,73 @@
+.page{
+    width: 100%;
+  }
+  
+  .page h2{
+    text-align: center;
+  }
+  
+  .page h3{
+    text-align: center;
+  }
+  
+  .oneRowChart{
+    margin-left: 20px ;
+    margin-right: 20px ;
+    margin-top: 40px;
+  }
+  
+  .twoRowChart{
+    margin-left: 0px ;
+    margin-right: 20px ;
+    margin-top: 10px;
+  }
+
+  .print:last-child {
+    page-break-after: auto;
+  }
+
+  .print{
+    page-break-after: avoid;    
+  }
+       
+  @media print {
+
+    .page {
+      width: 190mm;
+      min-height: 297mm;
+      background: white;
+      margin-top: 12mm;
+      margin-left: 12mm;
+      margin-right: 12mm;
+      height: 99;
+      /*
+      padding: 10mm;
+      border: 1px #D3D3D3 solid;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+    }
+  
+    .barsPrint{
+      width: 90%;
+    }
+  
+    .pageDashFarm {
+        width: 370mm;
+        min-height: 297mm;
+        background: white;
+        margin-top: 25mm;
+        margin-left: 15mm;
+    }
+
+    .print:last-child {
+      page-break-after: auto;
+    }
+    
+    @page {
+        size: portrait;
+    }
+  }
+  
+  
+  
+  

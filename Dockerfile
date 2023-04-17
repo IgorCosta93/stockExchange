@@ -1,0 +1,8 @@
+FROM node:latest
+MAINTAINER Igor Costa
+ENV PORT=3000
+COPY .  /var/FULLSERVICE
+WORKDIR /var/FULLSERVICE
+RUN npm install
+ENTRYPOINT npm start
+EXPOSE $PORT
