@@ -2,52 +2,60 @@ import React, { useEffect, useState } from "react";
 import { Card, Typography, Avatar, Row, Col } from "antd";
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
+import AAPL34 from '../../../img/companies/AAPL34.png';
 import AESB3 from '../../../img/companies/AESB3.png';
 import ALUP11 from '../../../img/companies/ALUP11.png';
-import AMER3 from '../../../img/companies/AMER3.png';
+import AURE3 from '../../../img/companies/AURE3.png';
 import BBAS3 from '../../../img/companies/BBAS3.png';
 import BBSE3 from '../../../img/companies/BBSE3.png';
-import BEEF3 from '../../../img/companies/BEEF3.png';
+import BBDC3 from '../../../img/companies/BBDC3.png';
+import BMGB4 from '../../../img/companies/BMGB4.png';
 import CIEL3 from '../../../img/companies/CIEL3.png';
 import CMIN3 from '../../../img/companies/CMIN3.png';
-import CPFE3 from '../../../img/companies/CPFE3.png';
+import CSAN3 from '../../../img/companies/CSAN3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
+import CXSE3 from '../../../img/companies/CXSE3.png';
 import GGBR4 from '../../../img/companies/GGBR4.png';
 import ITSA3 from '../../../img/companies/ITSA3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
-import LEVE3 from '../../../img/companies/LEVE3.png';
-import MRFG3 from '../../../img/companies/MRFG3.png';
+import MLAS3 from '../../../img/companies/MLAS3.png';
+import NUBR33 from '../../../img/companies/NUBR33.png';
 import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
-import PSSA3 from '../../../img/companies/PSSA3.png';
-import PRIO3 from '../../../img/companies/PRIO3.png';
+import RANI3 from '../../../img/companies/RANI3.png';
+import RAIZ4 from '../../../img/companies/RAIZ4.png';
 import SAPR3 from '../../../img/companies/SAPR3.png';
 import TAEE11 from '../../../img/companies/TAEE11.png';
+import UNIP6 from '../../../img/companies/UNIP6.png';
 import VALE3 from '../../../img/companies/VALE3.png';
 const images = {
+    AAPL34: AAPL34,
     AESB3: AESB3,
     ALUP11: ALUP11,
-    AMER3: AMER3,
+    AURE3: AURE3,
     BBAS3: BBAS3,
     BBSE3: BBSE3,
-    BEEF3: BEEF3,
+    BBDC3: BBDC3,
+    BMGB4: BMGB4,
     CIEL3: CIEL3,
     CMIN3: CMIN3,
-    CPFE3: CPFE3,
+    CSAN3: CSAN3,
     CPLE6: CPLE6,
+    CXSE3: CXSE3,
     GGBR4: GGBR4,
     ITSA3: ITSA3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
-    LEVE3: LEVE3,
-    MRFG3: MRFG3,
+    MLAS3: MLAS3,
+    NUBR33: NUBR33,
     PETR3: PETR3,
     PETR4: PETR4,
-    PSSA3: PSSA3,
-    PRIO3: PRIO3,
+    RANI3: RANI3,
+    RAIZ4: RAIZ4,
     SAPR3: SAPR3,
     TAEE11: TAEE11,
+    UNIP6: UNIP6,
     VALE3: VALE3,
 };
 
