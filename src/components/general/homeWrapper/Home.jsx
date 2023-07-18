@@ -18,7 +18,6 @@ import GGBR4 from '../../../img/companies/GGBR4.png';
 import ITSA3 from '../../../img/companies/ITSA3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
-import MLAS3 from '../../../img/companies/MLAS3.png';
 import NUBR33 from '../../../img/companies/NUBR33.png';
 import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
@@ -45,7 +44,6 @@ const images = {
     ITSA3: ITSA3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
-    MLAS3: MLAS3,
     NUBR33: NUBR33,
     PETR3: PETR3,
     PETR4: PETR4,
