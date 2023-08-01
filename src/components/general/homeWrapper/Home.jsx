@@ -10,6 +10,7 @@ import BBAS3 from '../../../img/companies/BBAS3.png';
 import BBSE3 from '../../../img/companies/BBSE3.png';
 import BBDC3 from '../../../img/companies/BBDC3.png';
 import BMGB4 from '../../../img/companies/BMGB4.png';
+import BRAP4 from '../../../img/companies/BRAP4.png';
 import CMIN3 from '../../../img/companies/CMIN3.png';
 import CSAN3 from '../../../img/companies/CSAN3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
@@ -36,6 +37,7 @@ const images = {
     BBSE3: BBSE3,
     BBDC3: BBDC3,
     BMGB4: BMGB4,
+    BRAP4: BRAP4,
     CMIN3: CMIN3,
     CSAN3: CSAN3,
     CPLE6: CPLE6,
