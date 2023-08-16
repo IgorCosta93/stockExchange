@@ -17,6 +17,7 @@ import CPLE6 from '../../../img/companies/CPLE6.png';
 import CXSE3 from '../../../img/companies/CXSE3.png';
 import GGBR4 from '../../../img/companies/GGBR4.png';
 import ITSA3 from '../../../img/companies/ITSA3.png';
+import IRBR3 from '../../../img/companies/IRBR3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
 import ROXO34 from '../../../img/companies/ROXO34.png';
@@ -44,6 +45,7 @@ const images = {
     CXSE3: CXSE3,
     GGBR4: GGBR4,
     ITSA3: ITSA3,
+    IRBR3: IRBR3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
     ROXO34: ROXO34,
