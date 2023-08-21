@@ -11,7 +11,6 @@ import BBSE3 from '../../../img/companies/BBSE3.png';
 import BBDC3 from '../../../img/companies/BBDC3.png';
 import BMGB4 from '../../../img/companies/BMGB4.png';
 import BRAP4 from '../../../img/companies/BRAP4.png';
-import CMIN3 from '../../../img/companies/CMIN3.png';
 import CSAN3 from '../../../img/companies/CSAN3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
 import CXSE3 from '../../../img/companies/CXSE3.png';
@@ -20,7 +19,6 @@ import ITSA3 from '../../../img/companies/ITSA3.png';
 import IRBR3 from '../../../img/companies/IRBR3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
-import ROXO34 from '../../../img/companies/ROXO34.png';
 import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
 import RANI3 from '../../../img/companies/RANI3.png';
@@ -39,7 +37,6 @@ const images = {
     BBDC3: BBDC3,
     BMGB4: BMGB4,
     BRAP4: BRAP4,
-    CMIN3: CMIN3,
     CSAN3: CSAN3,
     CPLE6: CPLE6,
     CXSE3: CXSE3,
@@ -48,7 +45,6 @@ const images = {
     IRBR3: IRBR3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
-    ROXO34: ROXO34,
     PETR3: PETR3,
     PETR4: PETR4,
     RANI3: RANI3,
