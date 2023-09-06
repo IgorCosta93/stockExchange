@@ -4,6 +4,7 @@ import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
 import AAPL34 from '../../../img/companies/AAPL34.png';
 import AESB3 from '../../../img/companies/AESB3.png';
+import ABCB4 from '../../../img/companies/ABCB4.png';
 import ALUP11 from '../../../img/companies/ALUP11.png';
 import AURE3 from '../../../img/companies/AURE3.png';
 import BBAS3 from '../../../img/companies/BBAS3.png';
@@ -21,6 +22,7 @@ import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
 import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
+import PINE4 from '../../../img/companies/PINE4.png';
 import RANI3 from '../../../img/companies/RANI3.png';
 import RAIZ4 from '../../../img/companies/RAIZ4.png';
 import SAPR3 from '../../../img/companies/SAPR3.png';
@@ -30,6 +32,7 @@ import VALE3 from '../../../img/companies/VALE3.png';
 const images = {
     AAPL34: AAPL34,
     AESB3: AESB3,
+    ABCB4: ABCB4,
     ALUP11: ALUP11,
     AURE3: AURE3,
     BBAS3: BBAS3,
@@ -47,6 +50,7 @@ const images = {
     KLBN3: KLBN3,
     PETR3: PETR3,
     PETR4: PETR4,
+    PINE4: PINE4,
     RANI3: RANI3,
     RAIZ4: RAIZ4,
     SAPR3: SAPR3,
