@@ -9,7 +9,6 @@ import ALUP11 from '../../../img/companies/ALUP11.png';
 import AURE3 from '../../../img/companies/AURE3.png';
 import BBAS3 from '../../../img/companies/BBAS3.png';
 import BBSE3 from '../../../img/companies/BBSE3.png';
-import BBDC3 from '../../../img/companies/BBDC3.png';
 import BMGB4 from '../../../img/companies/BMGB4.png';
 import BRAP4 from '../../../img/companies/BRAP4.png';
 import CSAN3 from '../../../img/companies/CSAN3.png';
@@ -37,7 +36,6 @@ const images = {
     AURE3: AURE3,
     BBAS3: BBAS3,
     BBSE3: BBSE3,
-    BBDC3: BBDC3,
     BMGB4: BMGB4,
     BRAP4: BRAP4,
     CSAN3: CSAN3,
