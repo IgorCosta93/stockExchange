@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Card, Typography, Avatar, Row, Col } from "antd";
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
-import AAPL34 from '../../../img/companies/AAPL34.png';
 import AESB3 from '../../../img/companies/AESB3.png';
 import ABCB4 from '../../../img/companies/ABCB4.png';
 import ALUP11 from '../../../img/companies/ALUP11.png';
@@ -12,11 +11,10 @@ import BBSE3 from '../../../img/companies/BBSE3.png';
 import BMGB4 from '../../../img/companies/BMGB4.png';
 import BRAP4 from '../../../img/companies/BRAP4.png';
 import CSAN3 from '../../../img/companies/CSAN3.png';
+import CPFE3 from '../../../img/companies/CPFE3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
 import CXSE3 from '../../../img/companies/CXSE3.png';
 import GGBR4 from '../../../img/companies/GGBR4.png';
-import ITSA3 from '../../../img/companies/ITSA3.png';
-import IRBR3 from '../../../img/companies/IRBR3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
 import PETR3 from '../../../img/companies/PETR3.png';
@@ -29,7 +27,6 @@ import TAEE11 from '../../../img/companies/TAEE11.png';
 import UNIP6 from '../../../img/companies/UNIP6.png';
 import VALE3 from '../../../img/companies/VALE3.png';
 const images = {
-    AAPL34: AAPL34,
     AESB3: AESB3,
     ABCB4: ABCB4,
     ALUP11: ALUP11,
@@ -39,11 +36,10 @@ const images = {
     BMGB4: BMGB4,
     BRAP4: BRAP4,
     CSAN3: CSAN3,
+    CPFE3: CPFE3,
     CPLE6: CPLE6,
     CXSE3: CXSE3,
     GGBR4: GGBR4,
-    ITSA3: ITSA3,
-    IRBR3: IRBR3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
     PETR3: PETR3,
