@@ -19,7 +19,6 @@ import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
 import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
-import PINE4 from '../../../img/companies/PINE4.png';
 import RANI3 from '../../../img/companies/RANI3.png';
 import RAIZ4 from '../../../img/companies/RAIZ4.png';
 import SAPR3 from '../../../img/companies/SAPR3.png';
@@ -44,7 +43,6 @@ const images = {
     KLBN3: KLBN3,
     PETR3: PETR3,
     PETR4: PETR4,
-    PINE4: PINE4,
     RANI3: RANI3,
     RAIZ4: RAIZ4,
     SAPR3: SAPR3,
