@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Typography, Avatar, Row, Col } from "antd";
+import { Card, Typography, Avatar, Row, Col, Spin } from "antd";
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
 import AESB3 from '../../../img/companies/AESB3.png';
@@ -72,33 +72,35 @@ function Home({props}){
 
     return(
         <div style={{ width: "97%", height: "82vh", marginTop: 0, marginRight: -20}}>
-            <Row>
-                {stocks.map(stock => {
-                    return(
-                        <Col xs={24} sm={6} md={6} lg={6} xl={4} style={{ marginTop: 15 }}>
-                            <Card style={{ width: "95%", borderRadius: 15, backgroundColor: "#20252E" }}>
-                                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-                                    <div style={{ textAlign: "left" }}>
-                                        <Title style={{ color: "#A6ADBB" }} level={3}>{stock.symbol}</Title>
+            <Spin spinning={props.stockExchange.loading}>
+                <Row>
+                    {stocks.map(stock => {
+                        return(
+                            <Col xs={24} sm={6} md={6} lg={6} xl={4} style={{ marginTop: 15 }}>
+                                <Card style={{ width: "95%", borderRadius: 15, backgroundColor: "#20252E" }}>
+                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+                                        <div style={{ textAlign: "left" }}>
+                                            <Title style={{ color: "#A6ADBB" }} level={3}>{stock.symbol}</Title>
+                                        </div>
+                                        <div style={{ marginLeft: "auto", marginRight: 0 }}>
+                                            <Avatar shape="square" size={30} src={images[stock.symbol]} style={{ borderRadius: 5 }}/>  
+                                        </div>       
+                                    </div>     
+                                    <Paragraph style={{ color: "#A6ADBB" }}>{stock.shortName}</Paragraph>  
+                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", marginBottom: -15 }}>
+                                        <div style={{ textAlign: "left" }}>
+                                            <Paragraph style={{ color: "#A6ADBB" }}>R$ {stock.regularMarketPrice}</Paragraph>
+                                        </div>                 
+                                        <div style={{ marginLeft: "auto", marginRight: 0, color: stock.regularMarketChangePercent > 0 ? "#87d068" : "#f04864" }}>
+                                            { stock.regularMarketChangePercent > 0  ? <ArrowUpOutlined/> : <ArrowDownOutlined/>} {stock.regularMarketChangePercent ? stock.regularMarketChangePercent.toFixed(2) : 0} %
+                                        </div>                 
                                     </div>
-                                    <div style={{ marginLeft: "auto", marginRight: 0 }}>
-                                        <Avatar shape="square" size={30} src={images[stock.symbol]} style={{ borderRadius: 5 }}/>  
-                                    </div>       
-                                </div>     
-                                <Paragraph style={{ color: "#A6ADBB" }}>{stock.shortName}</Paragraph>  
-                                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", marginBottom: -15 }}>
-                                    <div style={{ textAlign: "left" }}>
-                                        <Paragraph style={{ color: "#A6ADBB" }}>R$ {stock.regularMarketPrice}</Paragraph>
-                                    </div>                 
-                                    <div style={{ marginLeft: "auto", marginRight: 0, color: stock.regularMarketChangePercent > 0 ? "#87d068" : "#f04864" }}>
-                                        { stock.regularMarketChangePercent > 0  ? <ArrowUpOutlined/> : <ArrowDownOutlined/>} {stock.regularMarketChangePercent ? stock.regularMarketChangePercent.toFixed(2) : 0} %
-                                    </div>                 
-                                </div>
-                            </Card>
-                        </Col>                
-                    )
-                })}
-            </Row> 
+                                </Card>
+                            </Col>                
+                        )
+                    })}
+                </Row> 
+            </Spin>
         </div>
     )
 }
