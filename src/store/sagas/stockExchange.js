@@ -17,8 +17,6 @@ export function* getStockExchange(action){
         let BBAS3 = yield call(api, action.body, 'BBAS3');
         let BBSE3 = yield call(api, action.body, 'BBSE3');
         let BMGB4 = yield call(api, action.body, 'BMGB4');
-        let BRAP4 = yield call(api, action.body, 'BRAP4');
-        let CSAN3 = yield call(api, action.body, 'CSAN3');
         let CPFE3 = yield call(api, action.body, 'CPFE3');
         let CPLE6 = yield call(api, action.body, 'CPLE6');
         let CXSE3 = yield call(api, action.body, 'CXSE3');
