@@ -2,8 +2,8 @@ import { put, call } from 'redux-saga/effects';
 const axios = require('axios');
 
 function api(body, stock){
-    //return axios.get(`https://brapi.dev/api/quote/ABCB4,AESB3,ALUP11,AURE3,BBAS3,BBSE3,BMGB4,BRAP4,CSAN3,CPFE3,CPLE6,CXSE3,GGBR4,KEPL3,KLBN3,PETR3,PETR4,RAIZ4,RANI3,SAPR3,TAEE11,UNIP6,VALE3`,  
-    return axios.get(`https://brapi.dev/api/quote/${stock}`,  
+    //return axios.get(`https://brapi.dev/api/quote/ABCB4,AESB3,ALUP11,AURE3,BBAS3,BBSE3,BMGB4,BRAP4,CSAN3,CPFE3,CPLE6,CXSE3,GGBR4,KEPL3,KLBN3,PETR3,PETR4,RAIZ4,RANI3,SAPR3,TAEE11,UNIP6,VALE3?token=w5g7yL32PdY23zdf6dLiVV`,  
+    return axios.get(`https://brapi.dev/api/quote/${stock}?token=w5g7yL32PdY23zdf6dLiVV`,  
         { headers: { 'Content-Type': 'application/json' }
     });
 }
