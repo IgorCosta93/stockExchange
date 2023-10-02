@@ -42,8 +42,6 @@ export function* getStockExchange(action){
         BBAS3.data.results.map(s => { stocks.push(s); return null });        
         BBSE3.data.results.map(s => { stocks.push(s); return null });        
         BMGB4.data.results.map(s => { stocks.push(s); return null });        
-        BRAP4.data.results.map(s => { stocks.push(s); return null });        
-        CSAN3.data.results.map(s => { stocks.push(s); return null });        
         CPFE3.data.results.map(s => { stocks.push(s); return null });        
         CPLE6.data.results.map(s => { stocks.push(s); return null });        
         CXSE3.data.results.map(s => { stocks.push(s); return null });        
