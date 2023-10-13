@@ -12,7 +12,6 @@ export function* getStockExchange(action){
     try{
         let ABCB4 = yield call(api, action.body, 'ABCB4');
         let AESB3 = yield call(api, action.body, 'AESB3');
-        let ALUP11 = yield call(api, action.body, 'ALUP11');
         let AURE3 = yield call(api, action.body, 'AURE3');
         let BBAS3 = yield call(api, action.body, 'BBAS3');
         let BBSE3 = yield call(api, action.body, 'BBSE3');
@@ -21,6 +20,7 @@ export function* getStockExchange(action){
         let CPLE6 = yield call(api, action.body, 'CPLE6');
         let CXSE3 = yield call(api, action.body, 'CXSE3');
         let GGBR4 = yield call(api, action.body, 'GGBR4');
+        let ITSA4 = yield call(api, action.body, 'ITSA4');
         let JALL3 = yield call(api, action.body, 'JALL3');
         let KEPL3 = yield call(api, action.body, 'KEPL3');
         let KLBN3 = yield call(api, action.body, 'KLBN3');
@@ -37,7 +37,6 @@ export function* getStockExchange(action){
 
         ABCB4.data.results.map(s => { stocks.push(s); return null });        
         AESB3.data.results.map(s => { stocks.push(s); return null });        
-        ALUP11.data.results.map(s => { stocks.push(s); return null });        
         AURE3.data.results.map(s => { stocks.push(s); return null });        
         BBAS3.data.results.map(s => { stocks.push(s); return null });        
         BBSE3.data.results.map(s => { stocks.push(s); return null });        
@@ -46,6 +45,7 @@ export function* getStockExchange(action){
         CPLE6.data.results.map(s => { stocks.push(s); return null });        
         CXSE3.data.results.map(s => { stocks.push(s); return null });        
         GGBR4.data.results.map(s => { stocks.push(s); return null });        
+        ITSA4.data.results.map(s => { stocks.push(s); return null });        
         JALL3.data.results.map(s => { stocks.push(s); return null });        
         KEPL3.data.results.map(s => { stocks.push(s); return null });        
         KLBN3.data.results.map(s => { stocks.push(s); return null });        

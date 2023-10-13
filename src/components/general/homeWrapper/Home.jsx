@@ -4,7 +4,6 @@ import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
 import AESB3 from '../../../img/companies/AESB3.png';
 import ABCB4 from '../../../img/companies/ABCB4.png';
-import ALUP11 from '../../../img/companies/ALUP11.png';
 import AURE3 from '../../../img/companies/AURE3.png';
 import BBAS3 from '../../../img/companies/BBAS3.png';
 import BBSE3 from '../../../img/companies/BBSE3.png';
@@ -13,6 +12,7 @@ import CPFE3 from '../../../img/companies/CPFE3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
 import CXSE3 from '../../../img/companies/CXSE3.png';
 import GGBR4 from '../../../img/companies/GGBR4.png';
+import ITSA4 from '../../../img/companies/ITSA4.png';
 import JALL3 from '../../../img/companies/JALL3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
 import KLBN3 from '../../../img/companies/KLBN3.png';
@@ -27,7 +27,6 @@ import VALE3 from '../../../img/companies/VALE3.png';
 const images = {
     AESB3: AESB3,
     ABCB4: ABCB4,
-    ALUP11: ALUP11,
     AURE3: AURE3,
     BBAS3: BBAS3,
     BBSE3: BBSE3,
@@ -36,6 +35,7 @@ const images = {
     CPLE6: CPLE6,
     CXSE3: CXSE3,
     GGBR4: GGBR4,
+    ITSA4: ITSA4,
     JALL3: JALL3,
     KEPL3: KEPL3,
     KLBN3: KLBN3,
