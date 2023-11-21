@@ -16,10 +16,11 @@ export function* getStockExchange(action){
         let BBAS3 = yield call(api, action.body, 'BBAS3');
         let BBSE3 = yield call(api, action.body, 'BBSE3');
         let BMGB4 = yield call(api, action.body, 'BMGB4');
+        let CSMG3 = yield call(api, action.body, 'CSMG3');
         let CPFE3 = yield call(api, action.body, 'CPFE3');
         let CPLE6 = yield call(api, action.body, 'CPLE6');
         let CXSE3 = yield call(api, action.body, 'CXSE3');
-        let GGBR4 = yield call(api, action.body, 'GGBR4');
+        let GOAU4 = yield call(api, action.body, 'GOAU4');
         let ITSA4 = yield call(api, action.body, 'ITSA4');
         let JALL3 = yield call(api, action.body, 'JALL3');
         let KEPL3 = yield call(api, action.body, 'KEPL3');
@@ -28,6 +29,7 @@ export function* getStockExchange(action){
         let PETR4 = yield call(api, action.body, 'PETR4');
         let RAIZ4 = yield call(api, action.body, 'RAIZ4');
         let RANI3 = yield call(api, action.body, 'RANI3');
+        let ROXO34 = yield call(api, action.body, 'ROXO34');
         let SAPR3 = yield call(api, action.body, 'SAPR3');
         let TAEE11 = yield call(api, action.body, 'TAEE11');
         let UNIP6 = yield call(api, action.body, 'UNIP6');
@@ -41,10 +43,11 @@ export function* getStockExchange(action){
         BBAS3.data.results.map(s => { stocks.push(s); return null });        
         BBSE3.data.results.map(s => { stocks.push(s); return null });        
         BMGB4.data.results.map(s => { stocks.push(s); return null });        
+        CSMG3.data.results.map(s => { stocks.push(s); return null });        
         CPFE3.data.results.map(s => { stocks.push(s); return null });        
         CPLE6.data.results.map(s => { stocks.push(s); return null });        
         CXSE3.data.results.map(s => { stocks.push(s); return null });        
-        GGBR4.data.results.map(s => { stocks.push(s); return null });        
+        GOAU4.data.results.map(s => { stocks.push(s); return null });        
         ITSA4.data.results.map(s => { stocks.push(s); return null });        
         JALL3.data.results.map(s => { stocks.push(s); return null });        
         KEPL3.data.results.map(s => { stocks.push(s); return null });        
@@ -53,6 +56,7 @@ export function* getStockExchange(action){
         PETR4.data.results.map(s => { stocks.push(s); return null });        
         RAIZ4.data.results.map(s => { stocks.push(s); return null });        
         RANI3.data.results.map(s => { stocks.push(s); return null });        
+        ROXO34.data.results.map(s => { stocks.push(s); return null });        
         SAPR3.data.results.map(s => { stocks.push(s); return null });        
         TAEE11.data.results.map(s => { stocks.push(s); return null });        
         UNIP6.data.results.map(s => { stocks.push(s); return null });        

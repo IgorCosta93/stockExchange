@@ -8,10 +8,11 @@ import AURE3 from '../../../img/companies/AURE3.png';
 import BBAS3 from '../../../img/companies/BBAS3.png';
 import BBSE3 from '../../../img/companies/BBSE3.png';
 import BMGB4 from '../../../img/companies/BMGB4.png';
+import CSMG3 from '../../../img/companies/CSMG3.png';
 import CPFE3 from '../../../img/companies/CPFE3.png';
 import CPLE6 from '../../../img/companies/CPLE6.png';
 import CXSE3 from '../../../img/companies/CXSE3.png';
-import GGBR4 from '../../../img/companies/GGBR4.png';
+import GOAU4 from '../../../img/companies/GGBR4.png';
 import ITSA4 from '../../../img/companies/ITSA4.png';
 import JALL3 from '../../../img/companies/JALL3.png';
 import KEPL3 from '../../../img/companies/KEPL3.png';
@@ -20,6 +21,7 @@ import PETR3 from '../../../img/companies/PETR3.png';
 import PETR4 from '../../../img/companies/PETR4.png';
 import RANI3 from '../../../img/companies/RANI3.png';
 import RAIZ4 from '../../../img/companies/RAIZ4.png';
+import ROXO34 from '../../../img/companies/ROXO34.png';
 import SAPR3 from '../../../img/companies/SAPR3.png';
 import TAEE11 from '../../../img/companies/TAEE11.png';
 import UNIP6 from '../../../img/companies/UNIP6.png';
@@ -31,10 +33,11 @@ const images = {
     BBAS3: BBAS3,
     BBSE3: BBSE3,
     BMGB4: BMGB4,
+    CSMG3: CSMG3,
     CPFE3: CPFE3,
     CPLE6: CPLE6,
     CXSE3: CXSE3,
-    GGBR4: GGBR4,
+    GOAU4: GOAU4,
     ITSA4: ITSA4,
     JALL3: JALL3,
     KEPL3: KEPL3,
@@ -43,6 +46,7 @@ const images = {
     PETR4: PETR4,
     RANI3: RANI3,
     RAIZ4: RAIZ4,
+    ROXO34: ROXO34,
     SAPR3: SAPR3,
     TAEE11: TAEE11,
     UNIP6: UNIP6,
