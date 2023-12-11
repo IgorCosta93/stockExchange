@@ -24,6 +24,7 @@ import RAIZ4 from '../../../img/companies/RAIZ4.png';
 import ROXO34 from '../../../img/companies/ROXO34.png';
 import SAPR3 from '../../../img/companies/SAPR3.png';
 import TAEE11 from '../../../img/companies/TAEE11.png';
+import TRPL4 from '../../../img/companies/TRPL4.png';
 import UNIP6 from '../../../img/companies/UNIP6.png';
 import VALE3 from '../../../img/companies/VALE3.png';
 const images = {
@@ -49,6 +50,7 @@ const images = {
     ROXO34: ROXO34,
     SAPR3: SAPR3,
     TAEE11: TAEE11,
+    TRPL4: TRPL4,
     UNIP6: UNIP6,
     VALE3: VALE3,
 };

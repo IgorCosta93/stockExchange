@@ -32,6 +32,7 @@ export function* getStockExchange(action){
         let ROXO34 = yield call(api, action.body, 'ROXO34');
         let SAPR3 = yield call(api, action.body, 'SAPR3');
         let TAEE11 = yield call(api, action.body, 'TAEE11');
+        let TRPL4 = yield call(api, action.body, 'TRPL4');
         let UNIP6 = yield call(api, action.body, 'UNIP6');
         let VALE3 = yield call(api, action.body, 'VALE3');
 
@@ -59,6 +60,7 @@ export function* getStockExchange(action){
         ROXO34.data.results.map(s => { stocks.push(s); return null });        
         SAPR3.data.results.map(s => { stocks.push(s); return null });        
         TAEE11.data.results.map(s => { stocks.push(s); return null });        
+        TRPL4.data.results.map(s => { stocks.push(s); return null });        
         UNIP6.data.results.map(s => { stocks.push(s); return null });        
         VALE3.data.results.map(s => { stocks.push(s); return null });        
 
