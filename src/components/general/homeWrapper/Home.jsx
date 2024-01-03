@@ -2,58 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Card, Typography, Avatar, Row, Col, Spin } from "antd";
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text, Link } = Typography;
-import AESB3 from '../../../img/companies/AESB3.png';
-import ABCB4 from '../../../img/companies/ABCB4.png';
-import AURE3 from '../../../img/companies/AURE3.png';
-import BBAS3 from '../../../img/companies/BBAS3.png';
-import BBSE3 from '../../../img/companies/BBSE3.png';
-import BMGB4 from '../../../img/companies/BMGB4.png';
-import CSMG3 from '../../../img/companies/CSMG3.png';
-import CPFE3 from '../../../img/companies/CPFE3.png';
-import CPLE6 from '../../../img/companies/CPLE6.png';
-import CXSE3 from '../../../img/companies/CXSE3.png';
-import GOAU4 from '../../../img/companies/GGBR4.png';
-import ITSA4 from '../../../img/companies/ITSA4.png';
-import JALL3 from '../../../img/companies/JALL3.png';
-import KEPL3 from '../../../img/companies/KEPL3.png';
-import KLBN3 from '../../../img/companies/KLBN3.png';
-import PETR3 from '../../../img/companies/PETR3.png';
-import PETR4 from '../../../img/companies/PETR4.png';
-import RANI3 from '../../../img/companies/RANI3.png';
-import RAIZ4 from '../../../img/companies/RAIZ4.png';
-import ROXO34 from '../../../img/companies/ROXO34.png';
-import SAPR3 from '../../../img/companies/SAPR3.png';
-import TAEE11 from '../../../img/companies/TAEE11.png';
-import TRPL4 from '../../../img/companies/TRPL4.png';
-import UNIP6 from '../../../img/companies/UNIP6.png';
-import VALE3 from '../../../img/companies/VALE3.png';
-const images = {
-    AESB3: AESB3,
-    ABCB4: ABCB4,
-    AURE3: AURE3,
-    BBAS3: BBAS3,
-    BBSE3: BBSE3,
-    BMGB4: BMGB4,
-    CSMG3: CSMG3,
-    CPFE3: CPFE3,
-    CPLE6: CPLE6,
-    CXSE3: CXSE3,
-    GOAU4: GOAU4,
-    ITSA4: ITSA4,
-    JALL3: JALL3,
-    KEPL3: KEPL3,
-    KLBN3: KLBN3,
-    PETR3: PETR3,
-    PETR4: PETR4,
-    RANI3: RANI3,
-    RAIZ4: RAIZ4,
-    ROXO34: ROXO34,
-    SAPR3: SAPR3,
-    TAEE11: TAEE11,
-    TRPL4: TRPL4,
-    UNIP6: UNIP6,
-    VALE3: VALE3,
-};
 
 function Home({props}){    
     let [ stocks, setStocks ] = useState([]);
@@ -71,9 +19,9 @@ function Home({props}){
     function getStockExchange(){
         props.GET_STOCK_EXCHANGE()
     }
-
+    
     return(
-        <div style={{ width: "97%", height: "82vh", marginTop: 0, marginRight: -20}}>
+        <div style={{ width: "97%", height: "82vh", marginTop: -20, marginRight: -20}}>
             <Spin spinning={props.stockExchange.loading}>
                 <Row>
                     {stocks.map(stock => {
@@ -85,11 +33,11 @@ function Home({props}){
                                             <Title style={{ color: "#A6ADBB" }} level={3}>{stock.symbol}</Title>
                                         </div>
                                         <div style={{ marginLeft: "auto", marginRight: 0 }}>
-                                            <Avatar shape="square" size={30} src={images[stock.symbol]} style={{ borderRadius: 5 }}/>  
+                                            <Avatar shape="square" size={30} src={stock.logourl} style={{ borderRadius: 5 }}/>  
                                         </div>       
                                     </div>     
-                                    <Paragraph style={{ color: "#A6ADBB" }}>{stock.shortName}</Paragraph>  
-                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", marginBottom: -15 }}>
+                                    <Paragraph style={{ color: "#A6ADBB", marginTop: -5 }}>{stock.shortName}</Paragraph>  
+                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", marginBottom: -15, marginTop: -5 }}>
                                         <div style={{ textAlign: "left" }}>
                                             <Paragraph style={{ color: "#A6ADBB" }}>R$ {stock.regularMarketPrice}</Paragraph>
                                         </div>                 
@@ -97,6 +45,7 @@ function Home({props}){
                                             { stock.regularMarketChangePercent > 0  ? <ArrowUpOutlined/> : <ArrowDownOutlined/>} {stock.regularMarketChangePercent ? stock.regularMarketChangePercent.toFixed(2) : 0} %
                                         </div>                 
                                     </div>
+                                    <Paragraph style={{ color: "#fcfffc", marginTop: 5, marginBottom: -8 }}>Range: {stock.fiftyTwoWeekRange}</Paragraph>  
                                 </Card>
                             </Col>                
                         )
