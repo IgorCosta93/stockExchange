@@ -17,7 +17,6 @@ export function* getStockExchange(action){
         let BMGB4 = yield call(api, action.body, 'BMGB4');
         let CSMG3 = yield call(api, action.body, 'CSMG3');
         let CPFE3 = yield call(api, action.body, 'CPFE3');
-        let CPLE6 = yield call(api, action.body, 'CPLE6');
         let CXSE3 = yield call(api, action.body, 'CXSE3');
         let GOAU4 = yield call(api, action.body, 'GOAU4');
         let ITSA4 = yield call(api, action.body, 'ITSA4');
@@ -44,7 +43,6 @@ export function* getStockExchange(action){
         BMGB4.data.results.map(s => { stocks.push(s); return null });        
         CSMG3.data.results.map(s => { stocks.push(s); return null });        
         CPFE3.data.results.map(s => { stocks.push(s); return null });        
-        CPLE6.data.results.map(s => { stocks.push(s); return null });        
         CXSE3.data.results.map(s => { stocks.push(s); return null });        
         GOAU4.data.results.map(s => { stocks.push(s); return null });        
         ITSA4.data.results.map(s => { stocks.push(s); return null });        
