@@ -11,7 +11,6 @@ function api(body, stock){
 export function* getStockExchange(action){
     try{
         let ABCB4 = yield call(api, action.body, 'ABCB4');
-        let AESB3 = yield call(api, action.body, 'AESB3');
         let BBAS3 = yield call(api, action.body, 'BBAS3');
         let BBSE3 = yield call(api, action.body, 'BBSE3');
         let BMGB4 = yield call(api, action.body, 'BMGB4');
@@ -27,7 +26,6 @@ export function* getStockExchange(action){
         let PETR4 = yield call(api, action.body, 'PETR4');
         let RAIZ4 = yield call(api, action.body, 'RAIZ4');
         let RANI3 = yield call(api, action.body, 'RANI3');
-        let ROXO34 = yield call(api, action.body, 'ROXO34');
         let SAPR3 = yield call(api, action.body, 'SAPR3');
         let TAEE11 = yield call(api, action.body, 'TAEE11');
         let TRPL4 = yield call(api, action.body, 'TRPL4');
@@ -37,7 +35,6 @@ export function* getStockExchange(action){
         let stocks = [];
 
         ABCB4.data.results.map(s => { stocks.push(s); return null });        
-        AESB3.data.results.map(s => { stocks.push(s); return null });        
         BBAS3.data.results.map(s => { stocks.push(s); return null });        
         BBSE3.data.results.map(s => { stocks.push(s); return null });        
         BMGB4.data.results.map(s => { stocks.push(s); return null });        
@@ -52,8 +49,7 @@ export function* getStockExchange(action){
         PETR3.data.results.map(s => { stocks.push(s); return null });        
         PETR4.data.results.map(s => { stocks.push(s); return null });        
         RAIZ4.data.results.map(s => { stocks.push(s); return null });        
-        RANI3.data.results.map(s => { stocks.push(s); return null });        
-        ROXO34.data.results.map(s => { stocks.push(s); return null });        
+        RANI3.data.results.map(s => { stocks.push(s); return null });         
         SAPR3.data.results.map(s => { stocks.push(s); return null });        
         TAEE11.data.results.map(s => { stocks.push(s); return null });        
         TRPL4.data.results.map(s => { stocks.push(s); return null });        
