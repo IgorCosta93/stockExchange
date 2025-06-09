@@ -20,17 +20,14 @@ export function* getStockExchange(action){
         let CXSE3 = yield call(api, action.body, 'CXSE3');
         let GOAU4 = yield call(api, action.body, 'GOAU4');
         let ITSA4 = yield call(api, action.body, 'ITSA4');
-        let JALL3 = yield call(api, action.body, 'JALL3');
         let KEPL3 = yield call(api, action.body, 'KEPL3');
         let KLBN3 = yield call(api, action.body, 'KLBN3');
         let PETR3 = yield call(api, action.body, 'PETR3');
         let PETR4 = yield call(api, action.body, 'PETR4');
-        let RAIZ4 = yield call(api, action.body, 'RAIZ4');
         let RANI3 = yield call(api, action.body, 'RANI3');
         let SAPR3 = yield call(api, action.body, 'SAPR3');
         let TAEE11 = yield call(api, action.body, 'TAEE11');
-        let TRPL4 = yield call(api, action.body, 'TRPL4');
-        let UNIP6 = yield call(api, action.body, 'UNIP6');
+        let ISAE4 = yield call(api, action.body, 'ISAE4');
         let VALE3 = yield call(api, action.body, 'VALE3');
 
         let stocks = [];
@@ -45,17 +42,14 @@ export function* getStockExchange(action){
         CXSE3.data.results.map(s => { stocks.push(s); return null });        
         GOAU4.data.results.map(s => { stocks.push(s); return null });        
         ITSA4.data.results.map(s => { stocks.push(s); return null });        
-        JALL3.data.results.map(s => { stocks.push(s); return null });        
         KEPL3.data.results.map(s => { stocks.push(s); return null });        
         KLBN3.data.results.map(s => { stocks.push(s); return null });        
         PETR3.data.results.map(s => { stocks.push(s); return null });        
         PETR4.data.results.map(s => { stocks.push(s); return null });        
-        RAIZ4.data.results.map(s => { stocks.push(s); return null });        
         RANI3.data.results.map(s => { stocks.push(s); return null });         
         SAPR3.data.results.map(s => { stocks.push(s); return null });        
         TAEE11.data.results.map(s => { stocks.push(s); return null });        
-        TRPL4.data.results.map(s => { stocks.push(s); return null });        
-        UNIP6.data.results.map(s => { stocks.push(s); return null });        
+        ISAE4.data.results.map(s => { stocks.push(s); return null });        
         VALE3.data.results.map(s => { stocks.push(s); return null });        
 
         let response = {

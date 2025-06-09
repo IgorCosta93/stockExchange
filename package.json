@@ -30,16 +30,13 @@
     "xlsx": "^0.16.8"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=4096 start",
+    "start": "react-scripts --openssl-legacy-provider --max_old_space_size=4096 start",
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "react-scripts build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
-  },  
-  "engines": {
-    "node": "16.x"
   },
   "browserslist": {
     "production": [
@@ -53,14 +50,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/node-logger": "^6.3.7",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.7"
-  },
+  "devDependencies": {},
   "eslintConfig": {
     "overrides": [
       {
